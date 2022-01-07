@@ -1,0 +1,4 @@
+heading = ; [type_in_your_name_here] [type_in_your_email_here]\n; hw{latest_assignment_number}\n; Worked with no one\n; Advised by no one\n\n\n
+netlogo_save_folder = [any files created will be automatically saved inside of this folder]
+elapsed_time_copy_to_clipboard_format = {time} hrs
+elapsed_time_display_format = Time elapsed: {time} hrs
