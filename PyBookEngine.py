@@ -10,6 +10,11 @@ from PyBookImages import *
 # -----------------------------------------------------------------------
 # Comp Sci NetLogo Helper branch
 # ---------------------------------------------------------
+if system().lower() == 'windows':  # Say you're using Windows, and you have a 4K display. To make everything not really small, you set the scaling
+    import ctypes  # to 200%. Great, but you want to be able to utilize the native resolution of your display. So, you have this, which tells Windows to ignore the scaling.
+
+    PROCESS_PER_MONITOR_DPI_AWARE = 2
+    ctypes.windll.shcore.SetProcessDpiAwareness(PROCESS_PER_MONITOR_DPI_AWARE)
 
 
 # -----  Drop Shadow Pre-Render  (It adds like 0.02 seconds, which is hardly anything for this context if you ask me)  --------------------------------------------------------------------------------------
@@ -459,13 +464,6 @@ class Game:
         self.clock = pygame.time.Clock()
 
         self.display_resolution = self.screen.get_size()
-
-        if disable_scaling:
-            if system().lower() == 'windows':  # Say you're using Windows, and you have a 4K display. To make everything not really small, you set the scaling
-                import ctypes  # to 200%. Great, but you want to be able to utilize the native resolution of your display. So, you have this, which tells Windows to ignore the scaling.
-
-                PROCESS_PER_MONITOR_DPI_AWARE = 2
-                ctypes.windll.shcore.SetProcessDpiAwareness(PROCESS_PER_MONITOR_DPI_AWARE)
 
     def force_mouse_cursor_to_hand(self):
         self._force_mouse_cursor_to_hand = True

@@ -40,13 +40,15 @@ xres, yres = container_size[0] + button_container_outer_padding * 2, container_s
 latest_assignment_number = None
 latest_nlogo_file = None
 template = None
+scale = None
 
 with open('options.txt') as f:
     t = f.readlines()
     for line in t:
         option, value = line.split('=')
-        value = value.lstrip().replace('\\n', '\n')
-        option = option.strip()
+        value = value.lstrip().rstrip('\n').replace('\\n', '\n')
+        option = option.strip('\n ')
+        print(f'Option: {option}, Value: {value}')
         if option == 'heading':
             heading = value
         elif option == 'netlogo_save_folder':
@@ -55,6 +57,8 @@ with open('options.txt') as f:
             elapsed_time_copy_to_clipboard_format = value
         elif option == 'elapsed_time_display_format':
             elapsed_time_display_format = value
+        elif option == 'scale':
+            scale = float(value)
 
 
 def get_latest_homework():
@@ -78,7 +82,7 @@ def get_latest_homework():
 x = Thread(target=get_latest_homework)
 x.start()
 
-g = Game((xres, yres), 'CS NetLogo Helper', resolution=(xres, yres), disable_scaling=True)
+g = Game((xres * 0.5 * scale, yres * 0.5 * scale), 'CS NetLogo Helper', resolution=(xres, yres))
 s = g.scene()
 s.set_background((background_brightness, background_brightness, background_brightness))
 container_button_offset = button_container_outer_padding + button_container_padding
