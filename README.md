@@ -2,7 +2,7 @@
 The CS Netlogo Helper is a small python script I made, to make computer science homework easier. This project is really ironic now that I think about it.
 
 # What it looks like
-Like this but, a bit more saturated and less color managed
+Like this, but a bit more saturated and less color managed
 ![CS_NetLogo_Helper_example](https://user-images.githubusercontent.com/70453514/148714990-b182387d-352a-46d0-b494-fa9e01dbe905.png)
 
 # What it does
