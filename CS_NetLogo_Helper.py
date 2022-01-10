@@ -11,7 +11,7 @@ from time import time
 # Made by interestingbookstore
 # Github: https://github.com/interestingbookstore/randomstuff
 # -----------------------------------------------------------------------
-# Version 1.0
+# Version 1.0.0-alpha
 # ---------------------------------------------------------
 
 background_brightness = 37
