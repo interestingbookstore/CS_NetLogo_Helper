@@ -1,4 +1,6 @@
-heading = ; [type_in_your_name_here] [type_in_your_email_here]\n; hw{latest_assignment_number}\n; Worked with no one\n; Advised by no one\n\n\n
+You can delete this line = Just as a note, anything inside of curly brackets is a dynamic value, for example, "{time} hrs" becomes {0.5} hrs
+heading = ; [first name] [last name] [email]\n; hw{latest_assignment_number}\n; Worked with no one\n; Advised by no one\n\n\n
 netlogo_save_folder = [any files created will be automatically saved inside of this folder]
 elapsed_time_copy_to_clipboard_format = {time} hrs
 elapsed_time_display_format = Time elapsed: {time} hrs
+scale = 1
