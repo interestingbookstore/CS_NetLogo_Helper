@@ -16,6 +16,9 @@ Before anything happens, it gets the HTML from the homework website, and uses re
 
 If you click on an option that generates a new file, the blank space at the top will be populated with the start time, as well as the time elapsed, formatted correctly (as shown above) :). To make things even simpler, you can copy the time elapsed to the clipboard by clicking on the clipboard icon.
 
+# OS Support
+So far, I only bothered compiling everything for Windows, but it'd be pretty trivial to add support for MacOS and Linux as well. So if you need the other versions, you can ask!
+
 # Extra
 The clipboard icon used is from Google's icon collection, which can be found here, it's really cool!
 
