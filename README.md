@@ -20,6 +20,6 @@ If you click on an option that generates a new file, the blank space at the top 
 So far, I only bothered compiling everything for Windows, but it'd be pretty trivial to add support for MacOS and Linux as well. So if you need the other versions, you can ask!
 
 # Extra
-The clipboard icon used is from Google's icon collection, which can be found here, it's really cool!
+The clipboard icon used is from Google's icon collection, which can be found [here](https://fonts.google.com/icons), it's really cool!
 
-The fonts used are Roboto-Medium and Roboto-Bold, which you can find here, it's a pretty good font.
+The fonts used are Roboto-Medium and Roboto-Bold, which you can find [here](https://fonts.google.com/specimen/Roboto), it's a pretty good font.
